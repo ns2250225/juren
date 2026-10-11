@@ -452,6 +452,8 @@ function openShop() {
   transform: translateX(-50%);
   text-align: center;
   font-size: calc(16px * var(--s));
+  /* above the mobile touch layer (.touch z-10) so the build/start buttons stay tappable */
+  z-index: 15;
 }
 .grabbed,
 .respawn,
@@ -482,7 +484,8 @@ function openShop() {
 }
 .hud.mobile .intermission {
   bottom: auto;
-  top: 96px;
+  /* below the touch toolbar (⏸/地图/建设/指令/下一波 at 70–100px) */
+  top: 110px;
   font-size: 13px;
   padding: 5px 10px;
 }
