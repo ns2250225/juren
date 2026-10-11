@@ -1,0 +1,24 @@
+{
+  "name": "titan-defense",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "pinia": "^3.0.4",
+    "three": "^0.180.0",
+    "vue": "^3.5.43"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "typescript": "~5.9",
+    "vite": "^7.3.7",
+    "vue-tsc": "^3.3.13"
+  }
+}
